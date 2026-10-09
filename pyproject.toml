@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-tool"
+version = "1.0.0"
+authors = [{name = "SHIDHU-4141"}]
+description = "Modular network reconnaissance and AI analysis tool"
+dependencies = [
+    "scapy==2.5.0",
+    "colorama==0.4.6"
+]
+
+[project.scripts]
+ai_tool = "main:main"
+
+[tool.setuptools]
+py-modules = ["main"]
+packages = ["core", "utils"]
